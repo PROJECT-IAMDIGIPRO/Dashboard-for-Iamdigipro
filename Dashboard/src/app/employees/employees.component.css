@@ -1,33 +1,4 @@
-.header-right {
-    display: flex;
-    align-items: center;
-}
-
-.search-bar input {
-    padding: 10px;
-    border-radius: 25px;
-    border: none;
-    background-color: #333;
-    color: white;
-    width: 200px;
-    font-size: 15px;
-}
-
-.employee-name {
-    display: flex;
-    align-items: center;
-    width: 20%;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-}
-
-.status {
-    background-color: #4a2b2b;
-    border-radius: 25px;
-    padding: 9px 5px;
-    color: #f66136;
-}
+/* Main CSS Here */
 
 @import url(
 "https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
@@ -37,6 +8,17 @@
   margin: 0;
   padding: 0;
   font-family: 'Droid Sans' !important;
+}
+:root {
+  --background-color1: #fafaff;
+  --background-color2: #ffffff;
+  --background-color3: #ededed;
+  --background-color4: #cad7fda4;
+  --primary-color: #4b49ac;
+  --secondary-color: #0c007d;
+  --Border-color: #3f0097;
+  --one-use-color: #3f0097;
+  --two-use-color: #5500cb;
 }
 body {
   background-color: var(--background-color4);
@@ -304,7 +286,7 @@ header {
 
 .report-container {
   min-height: 300px;
-  max-width: 940px;
+  max-width: 880px;
   margin: 70px auto 0px auto;
   background-color: #1d1b1b;
   border-radius: 30px;
@@ -347,7 +329,7 @@ header {
 }
 .report-body::-webkit-scrollbar-thumb {
     background-image: 
-          linear-gradient(to bottom, rgb(226, 78, 24), rgb(226, 78, 24));
+        linear-gradient(to bottom, rgb(226, 77, 17), rgb(0, 0, 50));
   }
   .report-body::-webkit-scrollbar {
     width: 1px;
@@ -355,7 +337,6 @@ header {
   .report-body::-webkit-scrollbar-track {
     background-color: #9e9e9eb2;
   }
-  
 .report-topic-heading,
 .item1 {
   width: 855px;
@@ -373,23 +354,16 @@ header {
 .items {
   width: 1120px;
   margin-top: 15px;
-  gap: 20px;
-  
 }
 
 .item1 {
   margin-top: 20px;
-  padding: 10px;
-  gap: 20px;
 }
 .t-op-nextlvl {
   font-size: 14px;
   letter-spacing: 0px;
   font-weight: 400;
   color: white;
-  justify-content: center;
-  display: flex;
-  align-items: center;
 }
 
 .label-tag {
@@ -403,19 +377,21 @@ header {
 }
 
 .button-group {
-    display: flex;
-    gap: 2px; 
+  display: flex;
+  gap: 2px; 
+  padding-bottom: 15px;
+  border-bottom: solid #363030 1px;
 }
 /* ANIMATED BUTTONS */
 .btn {
-    background-color :#333; 
-      color: white;
-    border: none;
-    padding: 8px 14px;
-    cursor: pointer;
-    font-size: 13px;
-    border-radius: 15px;
-    transition: all 0.3s;
+  background-color :#333; 
+    color: white;
+  border: none;
+  padding: 8px 14px;
+  cursor: pointer;
+  font-size: 13px;
+  border-radius: 15px;
+  transition: all 0.3s;
 }
 
 .btn:hover {
@@ -426,6 +402,84 @@ header {
 .btn.pulse:hover {
     animation: pulse 1s infinite;
 }
+
+/* extra css added  */
+
+.employee-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  color: #dadada;
+}
+
+.employee-table th, .employee-table td {
+  padding: 13px;
+  text-align: left;
+  border-bottom: 1px solid #333;
+}
+
+.employee-info {
+  display: flex;
+  align-items: center;
+}
+
+.employee-info img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.checkbox-custom {
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border: 2px solid #666;
+  border-radius: 5px;
+  appearance: none;
+  cursor: pointer;
+  position: relative;
+}
+
+.checkbox-custom:checked {
+  background-color: #ff5a3c;
+  border-color: #ff5a3c;
+}
+
+.checkbox-custom:checked::before {
+  content: "✔";
+  color: white;
+  font-size: 14px;
+  position: absolute;
+  top: 2px;
+  left: 4px;
+}
+.status {
+  background-color: #4a2b2b;
+  border-radius: 25px;
+  padding: 9px 5px;
+  color: #f66136;
+}
+.pagination {
+display: flex;
+align-items: center;
+justify-content: left;
+color: white;
+padding-top: 15px;
+}
+
+.pagination-arrow {
+background-color: transparent;
+border: 1px solid white;
+color: white;
+padding: 1px 1px;
+border-radius: 5px;
+cursor: pointer;
+}
+
+/* done here */
+
+
 
 @keyframes pulse {
     0%,

@@ -1,1 +1,147 @@
-<p style="color: antiquewhite;">permissions works!</p>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+        <title>DASHBOARD</title>
+        <link rel="stylesheet" href="./permissions.component.css" />
+    </head>
+
+    <body>
+        
+            <div class="main">
+                <div class="searchbar2">
+                    <input type="text" name="" id="" placeholder="Search" />
+                    <div class="searchbtn">
+                        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210180758/Untitled-design-(28).png" class="icn srchicn" alt="search-button" />
+                    </div>
+                </div>
+
+                <div class="box-container">
+                    <div class="box box1">
+                        <div class="text">
+                            <h2 class="topic">Total Employees</h2>
+                            <h2 class="topic-heading">20</h2>
+                        </div>
+
+                        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210184645/Untitled-design-(31).png" alt="Views" />
+                    </div>
+
+                    <div class="box box2">
+                        <div class="text">
+                            <h2 class="topic">View</h2>
+                            <h2 class="topic-heading">18</h2>
+                        </div>
+
+                        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210185030/14.png" alt="likes" />
+                    </div>
+
+                    <div class="box box3">
+                        <div class="text">
+                            <h2 class="topic">View&Store</h2>
+                            <h2 class="topic-heading">1</h2>
+                        </div>
+
+                        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210184645/Untitled-design-(32).png" alt="comments" />
+                    </div>
+
+                    <div class="box box4">
+                        <div class="text">
+                            <h2 class="topic">Edit&Share</h2>
+                            <h2 class="topic-heading">1</h2>
+                        </div>
+
+                        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210185029/13.png" alt="published" />
+                    </div>
+                </div>
+
+                <div class="report-container">
+                    <div class="report-header">
+                        <h1 class="recent-Articles">Employee Permissions</h1>
+                    </div>
+
+                    <div class="report-body">
+                        <div class="report-topic-heading">
+                            <div class="button-group">
+                            <button class="btn pulse" style="background-color: rgb(226, 78, 24);">All Employee</button>&nbsp;
+                            <button class="btn pulse">Managers</button> &nbsp;
+                            <button class="btn pulse">Marketing</button> &nbsp;
+                            <button class="btn pulse">Sales</button> &nbsp;
+                            <button class="btn pulse">Developers</button> &nbsp;
+                            <button class="btn pulse">Designers</button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            
+                            <div class="search-container">
+                                <input type="text" class="search-input" placeholder="    Search">
+                            </div>&nbsp;
+                            <button class="btn pulse">Filters</button> &nbsp;   
+                        </div>
+                        </div>
+
+                        <table class="employee-table">
+                            <thead>
+                                <tr>
+                                    <th>Employee ID</th>
+                                    <th>Employee</th>
+                                    <th>View</th>
+                                    <th>View & Share</th>
+                                    <th>Edit & Share</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>CD8728</td>
+                                    <td>
+                                        <div class="employee-info">
+                                            <img src="employee-avatar.png" alt="Employee Avatar">
+                                            Madhusudhan<br>UI/UX Designer
+                                        </div>
+                                    </td>
+                                    <td><input type="checkbox" class="checkbox-custom"></td>
+                                    <td><input type="checkbox" class="checkbox-custom" checked></td>
+                                    <td><input type="checkbox" class="checkbox-custom"></td>
+                                </tr>
+                                <tr>
+                                    <td>CD8728</td>
+                                    <td>
+                                        <div class="employee-info">
+                                            <img src="employee-avatar.png" alt="Employee Avatar">
+                                            Nagarjuna<br>UI/UX Designer
+                                        </div>
+                                    </td>
+                                    <td><input type="checkbox" class="checkbox-custom"></td>
+                                    <td><input type="checkbox" class="checkbox-custom"></td>
+                                    <td><input type="checkbox" class="checkbox-custom" checked></td>
+                                </tr>
+                                <tr>
+                                    <td>CD8728</td>
+                                    <td>
+                                        <div class="employee-info">
+                                            <img src="employee-avatar.png" alt="Employee Avatar">
+                                            Nikhil<br>UI/UX Designer
+                                        </div>
+                                    </td>
+                                    <td><input type="checkbox" class="checkbox-custom"></td>
+                                    <td><input type="checkbox" class="checkbox-custom" checked></td>
+                                    <td><input type="checkbox" class="checkbox-custom"></td>
+                                </tr>
+                                <tr>
+                                    <td>CD8728</td>
+                                    <td>
+                                        <div class="employee-info">
+                                            <img src="employee-avatar.png" alt="Employee Avatar">
+                                            Nikhil<br>UI/UX Designer
+                                        </div>
+                                    </td>
+                                    <td><input type="checkbox" class="checkbox-custom"></td>
+                                    <td><input type="checkbox" class="checkbox-custom" checked></td>
+                                    <td><input type="checkbox" class="checkbox-custom"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="pagination">
+                            <span>Page 1 of 5</span>&nbsp;&nbsp;&nbsp;&nbsp;
+                            <button class="pagination-arrow">❮</button>&nbsp;&nbsp;&nbsp;&nbsp;
+                            <button class="pagination-arrow">❯</button>
+                        </div>
+        
