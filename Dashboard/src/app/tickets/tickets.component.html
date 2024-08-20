@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-    
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+        <title>DASHBOARD</title>
+    </head>
 
     <body>
         <!-- <header>
@@ -24,7 +29,7 @@
         </header> -->
 
         <div class="main-container">
-            <div class="navcontainer">
+            <!-- <div class="navcontainer">
                 <nav class="nav">
                     <div class="nav-upper-options">
 
@@ -68,7 +73,7 @@
                         </div>
                     </div>
                 </nav>
-            </div>
+            </div> -->
             <div class="main">
                 <div class="searchbar2">
                     <input type="text" name="" id="" placeholder="Search" />
@@ -118,11 +123,32 @@
                 <div class="report-container">
                     <div class="report-header">
                         <h1 class="recent-Articles">Tickets</h1>
-                        <h1 class="recent-Articles">Assign</h1>
-                        <h1 class="recent-Articles">Prority</h1>
-                        <h1 class="recent-Articles">Status</h1>
+                        <div class="dropdown">
+                            <label for="assign" class="recent-Articles">Assign:</label>
+                            <select id="assign" name="assign">
+                                <!-- <option value="user1">User 1</option>  
+                                <option value="user2">User 2</option>
+                                <option value="user3">User 3</option> -->
+                            </select>
+                        </div>
+                        <div class="dropdown">
+                            <label for="assign" class="recent-Articles">Prority</label>
+                            <select id="assign" name="assign">
+                                <!-- <option value="user1">User 1</option>  
+                                <option value="user2">User 2</option>
+                                <option value="user3">User 3</option> -->
+                            </select>
+                        </div>
+                        <div class="dropdown">
+                            <label for="assign" class="recent-Articles">Status</label>
+                            <select id="assign" name="assign">
+                                <!-- <option value="user1">User 1</option>  
+                                <option value="user2">User 2</option>
+                                <option value="user3">User 3</option> -->
+                            </select>
+                        </div>
                         <div class="button-group">
-                        <button class="btn pulse" style="background-color:rgb(226, 78, 24); color: white;">Actions</button>
+                            <button class="btn pulse" style="background-color:rgb(226, 78, 24); color: white;">Actions</button>
                         </div>
                     </div>
 
@@ -198,6 +224,7 @@
                 </div>  
             </div>
         </div>
+        
 
         <!-- <script src="./index.js"></script> -->
     </body>
