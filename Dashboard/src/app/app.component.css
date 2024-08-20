@@ -231,8 +231,9 @@ header {
 }
 .option1:hover {
   border-left: 5px solid orangered;
-  background-color: var(--Border-color);
-  color: white !important;
+  /* background-color: var(--Border-color); */
+  background-color: #dadada;
+  /* color: white !important; */
 }
 .box {
   height: 60px;

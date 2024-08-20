@@ -6,10 +6,14 @@
                   <img src="https://iamdigipro.com/assets/images/logo2.png" class="dglogo" alt="logo" />
               </div>
 
-              <div class="nav-option option1" [routerLink]="['/analytics']">
-                  <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210182148/Untitled-design-(29).png" class="nav-img" alt="dashboard" />
-                  <h3>Dashboard</h3>
-              </div>
+              <div class="nav-option option1" (click)="toggleAnalytics()">
+                <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210182148/Untitled-design-(29).png" class="nav-img" alt="dashboard" />
+                <h3>Dashboard</h3>
+            </div>
+            <div *ngIf="showAnalytics" class="nav-option option1" [routerLink]="['/analytics']">
+                <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210182148/Untitled-design-(29).png" class="nav-img" alt="analytics" />
+                <h3>Analytics</h3>
+            </div>
 
               <div class="nav-option option2" [routerLink]="['/tickets']">
                   <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210183322/9.png" class="nav-img" alt="articles" />

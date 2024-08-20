@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Dashboard';
+  showAnalytics = false;
+
+  toggleAnalytics() {
+    this.showAnalytics = !this.showAnalytics;
+  }
 }
